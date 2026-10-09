@@ -1,0 +1,165 @@
+/**
+ * WorkShift Print Stylesheet
+ */
+
+@media print {
+    body {
+        background: #FFFFFF !important;
+        color: #000000 !important;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-size: 12pt;
+        line-height: 1.4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .no-print, button, nav, header, footer {
+        display: none !important;
+    }
+
+    @page {
+        margin: 1.5cm;
+    }
+}
+
+.print-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.print-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.freelancer-title {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #1E3A8A;
+    margin-bottom: 4px;
+}
+
+.freelancer-contact {
+    color: #555555;
+    font-size: 10pt;
+}
+
+.meta-block {
+    text-align: right;
+}
+
+.invoice-word {
+    font-size: 24pt;
+    font-weight: 800;
+    color: #1E3A8A;
+    letter-spacing: 0.05em;
+    margin: 0 0 8px 0;
+}
+
+.meta-block p {
+    margin: 2px 0;
+    font-size: 10pt;
+}
+
+.divider {
+    border: none;
+    border-top: 2px solid #E2E8F0;
+    margin: 20px 0;
+}
+
+.client-block {
+    margin-bottom: 24px;
+}
+
+.client-block h3 {
+    font-size: 9pt;
+    color: #777777;
+    margin: 0 0 4px 0;
+    letter-spacing: 0.05em;
+}
+
+.client-name {
+    font-size: 13pt;
+    font-weight: bold;
+    margin: 0;
+}
+
+.print-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+.print-table th {
+    background: #F1F5F9;
+    border-bottom: 2px solid #CBD5E1;
+    padding: 10px;
+    font-size: 9pt;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.print-table td {
+    padding: 10px;
+    border-bottom: 1px solid #E2E8F0;
+    font-size: 10pt;
+}
+
+.totals-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.notes-col {
+    width: 55%;
+    font-size: 9pt;
+    color: #444444;
+}
+
+.notes-col h4 {
+    margin: 0 0 4px 0;
+    font-size: 10pt;
+}
+
+.numbers-col {
+    width: 38%;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 10pt;
+}
+
+.grand-total {
+    border-top: 2px solid #000000;
+    padding-top: 8px;
+    margin-top: 4px;
+    font-size: 12pt;
+}
+
+.paid-stamp {
+    display: inline-block;
+    border: 3px solid #10B981;
+    color: #10B981;
+    font-weight: bold;
+    font-size: 16pt;
+    padding: 6px 16px;
+    border-radius: 6px;
+    transform: rotate(-5deg);
+    margin-top: 20px;
+}
+
+.print-footer {
+    text-align: center;
+    font-size: 8pt;
+    color: #888888;
+    margin-top: 40px;
+    border-top: 1px solid #E2E8F0;
+    padding-top: 10px;
+}
